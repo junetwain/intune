@@ -33,21 +33,21 @@ This way, only Filetobecopied(1,2,3) will be deployed to endpoint devices. Files
 
 5.1. Install command:
 
-    ```
+
     powershell.exe -ExecutionPolicy Bypass -File Install.ps1
-    ```
+
 (Put quote marks if needed)
     
 5.2. Uninstall command:
 
-     ```
+
      powershell.exe -ExecutionPolicy Bypass -File Uninstall.ps1
-     ```
+
 (Put quote marks if needed)
 
 5.3. Detection rules:
 
-    Path: ```C:\Program Files (x86)\PBSG Tools\SAP```
+    Path: C:\Program Files (x86)\PBSG Tools\SAP
 
     File: SAP RDP.rdp
 
