@@ -32,11 +32,15 @@ This way, only Filetobecopied(1,2,3) will be deployed to endpoint devices. Files
 # 5. On Intune, go to Apps/Windows/Add/Win32. Upload the compiled intunewin package from Step 4
 
 5.1. Install command:
+    ```cmd
     powershell.exe -ExecutionPolicy Bypass -File Install.ps1
+    ```
 (Put quote marks if needed)
     
 5.2. Uninstall command:
+     ```cmd
      powershell.exe -ExecutionPolicy Bypass -File Uninstall.ps1
+     ```
 (Put quote marks if needed)
 
 5.3. Detection rules:
