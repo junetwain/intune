@@ -20,6 +20,8 @@
 
 # 4. Open Win32 Content Prep Tool and compile all the files into intunewin package
 The structure of files before compiling should look like this:
+
+
     Root folder\
         Application files\
             Filetobecopied1.txt
@@ -27,6 +29,7 @@ The structure of files before compiling should look like this:
             Filetobecopied3.exe
         Install.ps1
         Uninstall.ps1
+
 This way, only Filetobecopied(1,2,3) will be deployed to endpoint devices. Files not in \Application files\ will not be visible to users.
 
 # 5. On Intune, go to Apps/Windows/Add/Win32. Upload the compiled intunewin package from Step 4
