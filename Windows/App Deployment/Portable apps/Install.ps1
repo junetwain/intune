@@ -34,7 +34,7 @@ catch {
     Write-Log "Failed to copy files to $TargetFolder. Error is: $($_.Exception.Message))"
 }
 
-$TargetFile = "$env:PROGRAMFILES (X86)\PBSG Tools\SAP\SAP RDP.rdp"
+$TargetFile = "$env:ProgramFiles (x86)\PBSG Tools\SAP\SAP RDP.rdp"
 $ShortcutFile = "$env:Public\Desktop\SAP.lnk"
 $WScriptShell = New-Object -ComObject WScript.Shell
 $Shortcut = $WScriptShell.CreateShortcut($ShortcutFile)
