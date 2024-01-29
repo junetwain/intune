@@ -6,7 +6,7 @@ $trg2 = New-ScheduledTaskTrigger -Once -At 01:00 -RepetitionInterval (New-TimeSp
 # Use the following to copy bridge trigger Repetition parameters to the base trigger
 $trg1.Repetition = $trg2.Repetition
 # Specify action and principal
-$actn = New-ScheduledTaskAction -Execute "PowerShell" -Argument "E:\.temp\.PBSG\4. QC Done\05. SAP RDP\Install.ps1"
+$actn = New-ScheduledTaskAction -Execute "PowerShell" -Argument "C:\Program Files (x86)\PBSG Tools\Remove_Userfiles.ps1"
 $princ = New-ScheduledTaskPrincipal -UserId "NT AUTHORITY\SYSTEM" -LogonType ServiceAccount
 
 # Now create scheduled task. The task will be created at the root directory of Task Scheduler
